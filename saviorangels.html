@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAVIOR ANGELS</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #111;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+}
+
+.nav-left a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.nav-right span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* ===== PAGE TITLE ===== */
+.container {
+  padding: 40px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.filters span {
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sort {
+  font-size: 14px;
+}
+
+/* ===== PRODUCT GRID ===== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-name {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.price {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #555;
+}
+
+.sold-out {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-left">
+    <a href="home.html">HOME</a>
+    <a href="saviorangels.html">SHOP</a>
+  </div>
+  <div class="logo">SAVIOR ANGELS</div>
+  <div class="nav-right">
+    <span>🔍</span>
+    <span>👤</span>
+    <span>🛒</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-header">
+    <div>
+      <h2>Products</h2>
+      <div class="filters">
+        <span>Availability ▼</span>
+        <span>Price ▼</span>
+      </div>
+    </div>
+    <div class="sort">
+      5 items &nbsp; Sort ▼
+    </div>
+  </div>
+
+  <div class="products">
+
+    <div class="product-card">
+      <div class="sold-out">SOLD</div>
+      <img src="v1.jpeg" alt="buy.html">
+      <div class="product-name">SAVIOR ANGELS VOL 1</div>
+      <div class="price">IDR 250.000</div>
+    </div>
+
+    <div class="product-card">
+      <div class="sold-out">READY STOK</div>
+      <img src="v2.HEIC" alt="buy2.html">
+      <div class="product-name">SAVIOR ANGELS VOL 2</div>
+      <div class="price">IDR 210.000</div>
+    </div>
+
+    <div class="product-card">
+      <div class="sold-out">READY STOK</div>
+      <img src="v3.jpeg" alt="buy2.html">
+      <div class="product-name">SAVIOR ANGELS VOL 3</div>
+      <div class="price">IDR 230.000</div>
+    </div>
+
+    <div class="product-card">
+      <div class="sold-out">PRE ORDER</div>
+      <img src="v4.PNG" alt="">
+      <div class="product-name">SAVIOR ANGELS VOL 4</div>
+      <div class="price">IDR 130.000</div>
+    </div>
+
+     <div class="product-card">
+      <div class="sold-out">COMING SOON</div>
+      <img src="v5.PNG" alt="">
+      <div class="product-name">SAVIOR ANGELS VOL 5</div>
+      <div class="price">IDR 130.000</div>
+    </div>
+
+    <div class="product-card">
+      <div class="sold-out">COMING SOON</div>
+      <img src="v8.jpg" alt="">
+      <div class="product-name">SAVIOR ANGELS VOL 6</div>
+      <div class="price">IDR 130.000</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
